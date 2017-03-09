@@ -8,6 +8,8 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @comment = @article.comments.new
+    @comment.article_id = @article_id
   end
 
   def new
