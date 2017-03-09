@@ -3,12 +3,13 @@
   <head>
     <title>Blogger</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <br>
+    <p class="flash"><%= flash.notice %></p>
     <%= yield %>
   </body>
 </html>
